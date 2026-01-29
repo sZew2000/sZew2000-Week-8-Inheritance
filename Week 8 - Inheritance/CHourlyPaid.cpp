@@ -7,3 +7,24 @@ CHourlyPaid::CHourlyPaid(string name, int id) : CPayRoll(name , id)
 	mHourlyRate = 0.0f;
 
 }
+
+CHourlyPaid::~CHourlyPaid()
+{
+}
+
+void CHourlyPaid::setHoursWorked(float hoursWorked, float rate)
+{
+
+	mHoursWorked = hoursWorked; 
+	mHourlyRate = rate;
+
+}
+
+float CHourlyPaid::Pay()
+{
+	float* Pay = new float; 
+
+	*Pay = mHoursWorked * mHourlyRate;
+
+	return *Pay;
+}
