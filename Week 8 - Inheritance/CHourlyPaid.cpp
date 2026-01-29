@@ -22,9 +22,13 @@ void CHourlyPaid::setHoursWorked(float hoursWorked, float rate)
 
 float CHourlyPaid::Pay()
 {
-	float* Pay = new float; 
+	*AmountPaid = mHoursWorked * mHourlyRate;
 
-	*Pay = mHoursWorked * mHourlyRate;
+	return *AmountPaid;
+}
 
-	return *Pay;
+void CHourlyPaid::GetPay(float pay)
+{
+	pay = *AmountPaid;
+
 }

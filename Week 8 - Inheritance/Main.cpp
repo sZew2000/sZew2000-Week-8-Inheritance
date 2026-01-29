@@ -18,7 +18,7 @@ int main()
 	float* pay = new float;
 	SevRoll->GetDetails(_name, _id);  
 
-	cout << "Name on Payroll is " << _name << "ID of User is " << _id;
+	cout << "Name on Payroll is " << _name << "ID of User is " << _id << endl;
 
 	float hWorked = 37.5;
 	float hRate = 16.5;
@@ -27,7 +27,7 @@ int main()
 	SevsOtherRoll->GetDetails(_name, _id);
 	*pay = SevsOtherRoll->Pay();
 
-
+	cout << "Name on Payroll is " << _name << "ID of User is " << _id << "Payment Due: " << *pay;
 
 	_CrtDumpMemoryLeaks();
 	
