@@ -2,14 +2,11 @@
 
 using namespace std;
 
-
 struct SEmployee
 {
 	string name;
 	int id;
-
 };
-
 
 class CPayRoll
 {
