@@ -25,7 +25,7 @@ void start()
 
 	CPayRoll* SevRoll = new CPayRoll("Sev", 1000);
 	CHourlyPaid* SevsOtherRoll = new CHourlyPaid("Sev", 111);
-	CMonthlyPaid* SevsOtherOtherRoll 
+	CMonthlyPaid* SevsOtherOtherRoll;
 
 	string _name;
 	int _id;
