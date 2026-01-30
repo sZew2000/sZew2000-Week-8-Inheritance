@@ -2,7 +2,8 @@
 #include <crtdbg.h>
 #include <iostream>
 #include "CPayRoll.hpp"
-#include "CHourlyPaid.hpp"
+#include "CHourlyPaid.hpp" 
+#include "CMonthlyPaid.hpp"
 #pragma once
 
 using namespace std;    
@@ -24,6 +25,7 @@ void start()
 
 	CPayRoll* SevRoll = new CPayRoll("Sev", 1000);
 	CHourlyPaid* SevsOtherRoll = new CHourlyPaid("Sev", 111);
+	CMonthlyPaid* SevsOtherOtherRoll 
 
 	string _name;
 	int _id;
