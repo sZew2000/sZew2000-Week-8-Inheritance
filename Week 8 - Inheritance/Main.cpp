@@ -8,7 +8,9 @@
 
 using namespace std;    
 
-void start();
+void start(); 
+void outEmpDetails(string name , int id); 
+void outEmpDetails(string name, int id , float* pay );
 
 
 int main()
@@ -23,26 +25,31 @@ int main()
 void start()
 {
 
-	CPayRoll* SevRoll = new CPayRoll("Sev", 1000);
-	CHourlyPaid* SevsOtherRoll = new CHourlyPaid("Sev", 111);
-	CMonthlyPaid* SevsOtherOtherRoll;
+	CPayRoll* SevRoll = new CPayRoll("Sev", 1001);
+	CHourlyPaid* SevsOtherRoll = new CHourlyPaid("Sev", 1002);
+	CMonthlyPaid* SevsOtherOtherRoll = new CMonthlyPaid("Sev", 1003, 47000);
 
 	string _name;
 	int _id;
 	float* pay = new float;
 	SevRoll->GetDetails(_name, _id);
 
-	cout << "Name on Payroll is " << _name << "ID of User is " << _id << endl;
+	outEmpDetails(_name, _id);
 
 	float hWorked = 37.5;
 	float hRate = 16.5;
 
 	SevsOtherRoll->setHoursWorked(hWorked, hRate);
 	SevsOtherRoll->GetDetails(_name, _id);
-	*pay = SevsOtherRoll->Pay();
+	*pay = SevsOtherRoll->Pay();   
 
-	cout << "Name on Payroll is " << _name << "ID of User is " << _id << "Payment Due: " << *pay;
+	outEmpDetails(_name, _id, pay);	  
 
+	SevsOtherOtherRoll->SetSalary(47500); 
+	*pay = SevsOtherOtherRoll->Pay(); 
+
+	outEmpDetails(_name, _id, pay);
+	
 	delete pay;
 	delete SevRoll;
 	delete SevsOtherRoll;
@@ -50,4 +57,14 @@ void start()
 
 
 
+}
+
+void outEmpDetails(string name, int id)
+{
+	cout << "Name on Payroll is " << name << "ID of User is " << id << endl;
+}
+
+void outEmpDetails(string name, int id, float* pay)
+{
+	cout << "Name on Payroll is " << name << " ID of User is " << id << " Payment Due: " << *pay << endl;
 }
