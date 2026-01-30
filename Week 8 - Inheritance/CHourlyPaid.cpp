@@ -10,6 +10,7 @@ CHourlyPaid::CHourlyPaid(string name, int id) : CPayRoll(name , id)
 
 CHourlyPaid::~CHourlyPaid()
 {
+	delete AmountPaid;
 }
 
 void CHourlyPaid::setHoursWorked(float hoursWorked, float rate)
