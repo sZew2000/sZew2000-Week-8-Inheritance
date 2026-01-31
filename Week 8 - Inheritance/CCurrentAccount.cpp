@@ -10,6 +10,9 @@ void CCurrentAccount::Withdrawal(float amount)
 	if (balance - amount > overdraft)
 	{
 		ChangeBalance(balance -= amount);
+
+		std::cout << "Balance is now " << balance << std::endl;
+
 	}
 	else
 	{
@@ -21,12 +24,12 @@ void CCurrentAccount::Interest()
 {
 	const float balance = GetBalance();
 	const float minus = -1; 
-	float iunterest = ((balance / 100) * 5);
+	float interest = ((balance*-1) * 0.03);
 
 	if (balance < minus)
 	{
-		ChangeBalance(balance - iunterest);
+		ChangeBalance((balance - interest));
 
-		std::cout << iunterest << " Charged" << " Reamining Balance " << GetBalance();
+		std::cout << interest << " Charged" << " Reamining Balance " << GetBalance() << std::endl;
 	} 
 }

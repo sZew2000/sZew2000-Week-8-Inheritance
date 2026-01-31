@@ -12,7 +12,9 @@ float CAccount::GetBalance()
 
 void CAccount::Deposit(float amount)
 {
-	ChangeBalance(amount);
+	ChangeBalance(amount); 
+
+	std::cout << "Balance is now: " << GetBalance() << std::endl;
 }
 
 void CAccount::Withdrawal(float amount)
