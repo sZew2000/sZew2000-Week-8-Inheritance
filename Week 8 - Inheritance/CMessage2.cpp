@@ -1,13 +1,8 @@
-#include <iostream> 
-#include "CTest.hpp"
-
+#include "CMessage2.hpp"
 using namespace std;
 
-class CMessage2 : CTest
+void CMessage2::WriteMessage()
 {
+	cout << "I am Message 2 " << endl;
 
-public:
-
-	void WriteMessage();
-
-};
+}

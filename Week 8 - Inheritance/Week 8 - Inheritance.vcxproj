@@ -123,7 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CMessage1.cpp" />
+    <ClCompile Include="CMessage2.cpp" />
+    <ClCompile Include="CTest.cpp" />
     <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMessage1.hpp" />
+    <ClInclude Include="CMessage2.hpp" />
+    <ClInclude Include="CTest.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,15 @@
-#include <iostream> 
-#include "CMessage2.hpp"
+#include <iostream>
+#pragma once
+#include "CTest.hpp"
+
+
 using namespace std;
 
-void CMessage2::WriteMessage()
+class CMessage2 : CTest
 {
-	cout << "I am Message 2 " << endl;
 
-}
+public:
+
+	void WriteMessage();
+
+};
