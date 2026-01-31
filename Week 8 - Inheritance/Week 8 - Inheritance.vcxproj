@@ -126,12 +126,14 @@
     <ClCompile Include="CAccount.cpp" />
     <ClCompile Include="CCurrentAccount.cpp" />
     <ClCompile Include="CDepositAccount.cpp" />
+    <ClCompile Include="CInvestmentAccount.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAccount.hpp" />
     <ClInclude Include="CCurrentAccount.hpp" />
     <ClInclude Include="CDepositAccount.hpp" />
+    <ClInclude Include="CInvestmentAccount.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

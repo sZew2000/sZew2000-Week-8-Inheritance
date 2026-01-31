@@ -8,7 +8,7 @@ class CDepositAccount : public CAccount
 public:
 
 	void Withdrawal(float amount);
-	void Interest();
+	 void Interest();
 
 
 
