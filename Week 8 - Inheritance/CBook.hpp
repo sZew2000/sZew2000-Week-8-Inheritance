@@ -1,22 +1,20 @@
 #include <iostream> 
 
-using namespace std;
 
+using namespace std; 
 
 class CBook
 {
 
-private:
-
+private: 
 	string mTitle;
-	string mAuthor;
-
+	string mAuthor; 
 public:
-
-	CBook(string title, string author);
+	CBook(string title, string author); 
+	void SetDetails(string title, string author); 
+	void GetDetails(string& title, string& author); 
 
 
 
 
 };
-
