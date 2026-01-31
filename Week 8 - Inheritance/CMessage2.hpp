@@ -1,11 +1,10 @@
 #include <iostream>
+#include "CTest.hpp" 
 #pragma once
-#include "CTest.hpp"
-
 
 using namespace std;
 
-class CMessage2 : CTest
+class CMessage2 : public CTest
 {
 
 public:

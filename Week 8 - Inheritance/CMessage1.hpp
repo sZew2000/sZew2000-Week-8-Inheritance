@@ -3,7 +3,7 @@
 
 using namespace std;    
 
-class CMessage1 : CTest
+class CMessage1 : public CTest
 {
 
 public: 

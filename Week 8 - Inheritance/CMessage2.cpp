@@ -1,3 +1,4 @@
+#include <iostream>
 #include "CMessage2.hpp"
 using namespace std;
 
