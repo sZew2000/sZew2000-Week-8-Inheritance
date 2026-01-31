@@ -17,13 +17,5 @@ void CAccount::Deposit(float amount)
 	std::cout << "Balance is now: " << GetBalance() << std::endl;
 }
 
-void CAccount::Withdrawal(float amount)
-{
-}
-
-void CAccount::Interest()
-{
-}
-
 
 

@@ -33,7 +33,9 @@ int main()
 	myInvestmentAccount->Interest();
 
 
-
+	delete myCurrentAccount; 
+	delete myDepositAccount; 
+	delete myInvestmentAccount;
 
 
 
