@@ -8,6 +8,6 @@ class CMessage1 : CTest
 
 public: 
 
-
+	void WriteMessage(); 
 
 };
