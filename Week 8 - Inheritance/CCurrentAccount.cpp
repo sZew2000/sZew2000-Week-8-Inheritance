@@ -29,8 +29,4 @@ void CCurrentAccount::Interest()
 
 		std::cout << iunterest << " Charged" << " Reamining Balance " << GetBalance();
 	} 
-
-
-
-
 }
